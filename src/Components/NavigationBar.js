@@ -5,7 +5,7 @@ import { NavigationOptions } from "../Config";
 
 const NavigationBar = () => {
   return (
-    <div className="h-[80px] fixed w-full shadow-md items-center flex justify-center">
+    <div className="h-[80px] fixed w-full shadow-md items-center flex justify-center z-[1000] bg-white">
       <div className="max-w-[1200px] items-center flex">
         <img
           src={logo}

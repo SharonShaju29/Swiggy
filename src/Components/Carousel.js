@@ -6,10 +6,12 @@ const Carousel = (props) => {
   const [length, setLength] = useState(1);
   const [arrLength, setArrLength] = useState(props.length);
   const [clickCounterBack, setClickCounterBack] = useState(1);
+  const [mlChunk, setMlChunk] = useState("0%");
 
   function handlePrevious() {
     setLength(length - 1);
     setArrLength(arrLength + props.numberOfElements);
+    setMlChunk(`${Number(mlChunk.split("%")[0]) - props.gap}%`);
     document.getElementById(props.uid).style.transform = `translateX(-${
       props.size *
       (arrLength % props.numberOfElements === 0
@@ -31,6 +33,7 @@ const Carousel = (props) => {
   function handleNext() {
     setLength(length + 1);
     setArrLength(arrLength - props.numberOfElements);
+    setMlChunk(`${Number(mlChunk.split("%")[0]) + props.gap}%`);
     document.getElementById(props.uid).style.transform = `translateX(-${
       props.size *
       (arrLength % props.numberOfElements === 0
@@ -48,6 +51,7 @@ const Carousel = (props) => {
           <button
             id="back"
             disabled={length === 1}
+            className={length === 1 ? "opacity-35" : ""}
             onClick={() => handlePrevious()}
           >
             <img
@@ -56,8 +60,17 @@ const Carousel = (props) => {
             />
           </button>
           <button
-            disabled={arrLength < props.length / props.numberOfElements}
+            disabled={
+              arrLength === props.length % props.numberOfElements ||
+              arrLength === props.numberOfElements
+            }
             onClick={() => handleNext()}
+            className={
+              arrLength === props.length % props.numberOfElements ||
+              arrLength === props.numberOfElements
+                ? "opacity-35"
+                : ""
+            }
           >
             <img
               src={next}
@@ -68,6 +81,20 @@ const Carousel = (props) => {
       </div>
       <div className="lg:w-[1200px] w-[100vw] overflow-x-hidden justify-center flex">
         {props.children}
+      </div>
+      <div
+        id=""
+        className={
+          props.progressBar ? "justify-center items-center py-3 flex" : "hidden"
+        }
+      >
+        <div className="h-1 bg-slate-300 w-12 rounded-sm">
+          <div
+            style={{ marginLeft: mlChunk }}
+            id="itr-chunk"
+            className={`bg-[#fc8019] ${props.width} h-1`}
+          />
+        </div>
       </div>
     </div>
   );

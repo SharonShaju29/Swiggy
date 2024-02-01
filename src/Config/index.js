@@ -232,3 +232,15 @@ export const TopRestaurantChainList = [
     location: "Jayanagar",
   },
 ];
+
+export const filterHome = [
+  { name: "Filter", icon: "" },
+  { name: "Sort By", icon: "" },
+  { name: "Fast Delivery", icon: "" },
+  { name: "New on Swiggy", icon: "" },
+  { name: "Rating 4.0+", icon: "" },
+  { name: "Pure Veg", icon: "" },
+  { name: "Offers", icon: "" },
+  { name: "Rs. 300-Rs. 600", icon: "" },
+  { name: "Less than Rs. 300", icon: "" }
+];

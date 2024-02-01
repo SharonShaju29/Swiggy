@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "../Components/Carousel";
 import { DishesHomePage, TopRestaurantChainList } from "../Config";
 import Card from "../Components/Card";
+import CardWithFilter from "../Components/CardWithFilter";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,8 @@ const HomePage = () => {
           size={168}
           length={DishesHomePage.length}
           uid="carousel-items"
+          width={"w-[25%]"}
+          progressBar={false}
           numberOfElements={5}
         >
           <div className="overflow-x-scroll no-scrollbar my-4">
@@ -36,10 +39,19 @@ const HomePage = () => {
           size={305}
           length={TopRestaurantChainList.length}
           uid="carousel-card-items"
+          width={"w-[15%]"}
+          gap={15}
+          progressBar={true}
           numberOfElements={3}
         >
           <Card src={TopRestaurantChainList} />
         </Carousel>
+      </div>
+      <div className="w-full justify-center flex my-9">
+        <hr className="w-[90vw] max-w-[1200px]" />
+      </div>
+      <div className="flex justify-center">
+        <CardWithFilter header="Restaurants with online food delivery in Bangalore" />
       </div>
     </div>
   );
