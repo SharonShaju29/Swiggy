@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import back from "../Assets/back.svg";
 import next from "../Assets/next.svg";
+import thumbsUp from "../Assets/thumbsUp.avif";
 
 const Carousel = (props) => {
   const [length, setLength] = useState(1);
@@ -44,10 +45,11 @@ const Carousel = (props) => {
   }
 
   return (
-    <div className="mt-2 flex flex-col lg:w-[1200px] w-[100vw]">
-      <div className="flex items-center lg:w-[1200px] w-[100vw] justify-between">
-        <h2 className="text-[24px] font-bold">{props.header}</h2>
-        <div className="flex">
+    <div className="mt-2 flex flex-col lg:w-[1200px] w-[100vw] lg:ml-0 ml-8">
+      <div className="flex items-center lg:w-[1200px] w-[100vw] lg:justify-between lg:pl-0 pl-2">
+        <img src={thumbsUp} className="h-[20px] lg:hidden pr-2" />
+        <h2 className="text-[20px] lg:text-[24px] font-bold">{props.header}</h2>
+        <div className="lg:flex hidden">
           <button
             id="back"
             disabled={length === 1}
@@ -88,7 +90,7 @@ const Carousel = (props) => {
           props.progressBar ? "justify-center items-center py-3 flex" : "hidden"
         }
       >
-        <div className="h-1 bg-slate-300 w-12 rounded-sm">
+        <div className="h-1 bg-slate-300 w-12 rounded-sm lg:block hidden">
           <div
             style={{ marginLeft: mlChunk }}
             id="itr-chunk"

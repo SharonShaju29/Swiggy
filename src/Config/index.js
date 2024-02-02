@@ -8,6 +8,8 @@ import cartHover from "../Assets/cartHover.svg";
 import discountHover from "../Assets/discountHover.svg";
 import helpHover from "../Assets/helpHover.svg";
 import signinHover from "../Assets/signinHover.svg";
+import filter from "../Assets/filter.svg";
+import dropdown from "../Assets/dropdown.svg";
 
 export const NavigationOptions = [
   {
@@ -234,13 +236,39 @@ export const TopRestaurantChainList = [
 ];
 
 export const filterHome = [
-  { name: "Filter", icon: "" },
-  { name: "Sort By", icon: "" },
+  { name: "Filter", icon: filter },
+  { name: "Sort By", icon: dropdown },
   { name: "Fast Delivery", icon: "" },
   { name: "New on Swiggy", icon: "" },
   { name: "Rating 4.0+", icon: "" },
   { name: "Pure Veg", icon: "" },
   { name: "Offers", icon: "" },
   { name: "Rs. 300-Rs. 600", icon: "" },
-  { name: "Less than Rs. 300", icon: "" }
+  { name: "Less than Rs. 300", icon: "" },
+];
+
+export const typesCardMobile = [
+  {
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/ak4f9kufbxgb8fprancy",
+  },
+  {
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/rxhxvcibw2jlbihmwqwh",
+  },
+];
+
+export const offerBanner = [
+  {
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/c302e410f523bd8ed4239e62e1844081",
+  },
+  {
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/34dae89ad01e2fa8c73063b1ca449173",
+  },
+];
+
+export const discountBanner = [
+  { link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/ngjatt8hwriaytmugmqz" },
+  { link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/dzm1eo2punmiqd1idyzn" },
+  { link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/skp6dyt64rxasxs3bqse" },
+  { link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/mbcjw5tiuemimw1pfjli" },
+  { link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/glitfsp43tqn8rsfq23a" }
 ];

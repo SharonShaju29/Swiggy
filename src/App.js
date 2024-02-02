@@ -5,7 +5,7 @@ import NavigationBar from './Components/NavigationBar.js'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App overflow-x-hidden">
       <NavigationBar/>
       <div className="mt-[80px]">
       <Routes>
