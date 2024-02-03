@@ -10,6 +10,10 @@ import helpHover from "../Assets/helpHover.svg";
 import signinHover from "../Assets/signinHover.svg";
 import filter from "../Assets/filter.svg";
 import dropdown from "../Assets/dropdown.svg";
+import account from "../Assets/account.svg";
+import food from "../Assets/food.svg";
+import instamart from "../Assets/instamart.svg";
+import home from "../Assets/home.svg";
 
 export const NavigationOptions = [
   {
@@ -266,9 +270,27 @@ export const offerBanner = [
 ];
 
 export const discountBanner = [
-  { link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/ngjatt8hwriaytmugmqz" },
-  { link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/dzm1eo2punmiqd1idyzn" },
-  { link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/skp6dyt64rxasxs3bqse" },
-  { link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/mbcjw5tiuemimw1pfjli" },
-  { link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/glitfsp43tqn8rsfq23a" }
+  {
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/ngjatt8hwriaytmugmqz",
+  },
+  {
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/dzm1eo2punmiqd1idyzn",
+  },
+  {
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/skp6dyt64rxasxs3bqse",
+  },
+  {
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/mbcjw5tiuemimw1pfjli",
+  },
+  {
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/glitfsp43tqn8rsfq23a",
+  },
+];
+
+export const navigationBarMobileItems = [
+  { name: "SWIGGY", icon: home },
+  { name: "FOOD", icon: food },
+  { name: "INSTAMART", icon: instamart },
+  { name: "SEARCH", icon: search },
+  { name: "ACCOUNT", icon: account },
 ];

@@ -28,7 +28,7 @@ const NavigationBar = () => {
           </div>
           <img
             src={dropdown}
-            className="hidden lg:block h-[24px] w-[24px] ml-1.5 mt-1"
+            className="hidden lg:block h-[24px] w-[24px] pl-1.5 mt-1"
           />
         </div>
         <div className="lg:hidden flex pr-1 cursor-pointer">

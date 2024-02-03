@@ -2,7 +2,7 @@ import React from "react";
 
 const OfferBannerCarousel = (props) => {
   return (
-    <div className="flex w-[100vw] overflow-x-scroll no-scrollbar ml-2 pr-10">
+    <div className="flex w-[100vw] overflow-x-scroll no-scrollbar pl-2 pr-10">
       {props.src.map((item) => (
         <img
           src={item.link}

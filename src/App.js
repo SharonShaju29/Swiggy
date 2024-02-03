@@ -1,17 +1,19 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/HomePage.js";
-import NavigationBar from './Components/NavigationBar.js'
+import NavigationBar from "./Components/NavigationBar.js";
+import NavigationBarMobile from "./Components/NavigationBarMobile.js";
 
 function App() {
   return (
-    <div className="App overflow-x-hidden">
-      <NavigationBar/>
+    <div className="App">
+      <NavigationBar />
       <div className="mt-[80px]">
-      <Routes>
-        <Route path="/" Component={HomePage} />
-      </Routes>
+        <Routes>
+          <Route path="/" Component={HomePage} />
+        </Routes>
       </div>
+        <NavigationBarMobile />
     </div>
   );
 }

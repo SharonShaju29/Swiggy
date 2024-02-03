@@ -68,7 +68,11 @@ const HomePage = () => {
         <OfferBannerCarousel margin={1} src={discountBanner} />
       </div>
       <div className="flex justify-center">
-        <CardWithFilter header="Restaurants with online food delivery in Bangalore" />
+        <CardWithFilter
+          header="Restaurants with online food delivery in Bangalore"
+          mobHeader="All Restaurants Nearby"
+          subHeader="Discover unique tastes near you"
+        />
       </div>
     </div>
   );
