@@ -22,6 +22,7 @@ const HomePage = () => {
           uid="carousel-items"
           width={"w-[25%]"}
           progressBar={false}
+          showArrows={true}
           numberOfElements={5}
         >
           <div className="overflow-x-scroll no-scrollbar my-4">
@@ -43,15 +44,17 @@ const HomePage = () => {
       <div className="w-full justify-center my-9 lg:flex hidden">
         <hr className="w-[90vw] max-w-[1200px]" />
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center overflow-x-hidden">
         <Carousel
           header="Top restaurant chains in Bangalore"
+          mobHeader="Top Picks For You"
           size={305}
           length={TopRestaurantChainList.length}
           uid="carousel-card-items"
           width={"w-[15%]"}
           gap={15}
           progressBar={true}
+          showArrows={true}
           numberOfElements={3}
         >
           <Card src={TopRestaurantChainList} />
@@ -60,12 +63,12 @@ const HomePage = () => {
       <div className="w-full justify-center my-9 lg:flex hidden">
         <hr className="w-[90vw] max-w-[1200px] lg:flex hidden" />
       </div>
-      <div className="lg:hidden my-2 pr-10">
+      <div className="lg:hidden my-2 lg:ml-0 ml-2 pr-10 mr-2 overflow-x-hidden">
         <OfferBannerCarousel margin={2} src={offerBanner} />
       </div>
-      <div className="lg:hidden text-left mt-2">
-        <h2 className="text-[20px] font-bold ml-4 my-4">Offers for You</h2>
-        <OfferBannerCarousel margin={1} src={discountBanner} />
+      <div className="lg:hidden text-left mt-2 ml-2 lg:ml-0 mr-2 overflow-x-hidden">
+        <h2 className="text-[20px] font-bold ml-2 my-4">Offers for You</h2>
+        <OfferBannerCarousel margin={2} src={discountBanner} />
       </div>
       <div className="flex justify-center">
         <CardWithFilter

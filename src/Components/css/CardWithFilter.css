@@ -1,0 +1,27 @@
+.fixed-filters {
+  top: 0;
+  position: fixed;
+  z-index: 2000;
+  background: white;
+  height: 80px;
+  width: 1300px;
+  margin-left: -50px;
+  margin-top: -4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-wrap {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .fixed-filters {
+        display: none;
+    }
+}

@@ -4,15 +4,18 @@ import dropdown from "../Assets/dropdown.svg";
 import { NavigationOptions } from "../Config";
 import discount from "../Assets/discount.svg";
 import location from "../Assets/location.svg";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
     <div className="h-[58px] lg:h-[80px] border-b-2 fixed w-[100vw] lg:shadow-md items-center flex justify-center z-[1000] bg-white">
       <div className="max-w-[1200px] lg:w-full w-[95vw] items-center flex justify-between">
-        <img
-          src={logo}
-          className="hidden lg:block h-[48px] w-[48px] hover:h-[52px] transition-all"
-        />
+        <Link to="/">
+          <img
+            src={logo}
+            className="hidden lg:block h-[48px] w-[48px] hover:h-[52px] transition-all"
+          />
+        </Link>
         <div
           id="location"
           className="text-[12px] lg:text-[14px] flex-col  lg:flex-row lg:flex lg:ml-10 cursor-pointer items-center py-4 text-left lg:text-center"
@@ -40,32 +43,34 @@ const NavigationBar = () => {
         <div className="ml-[150px] hidden lg:flex">
           {NavigationOptions.map((item, index) => (
             <div>
-              <div
-                className="flex ml-[45px] cursor-pointer hover:text-[#fc8019]"
-                onMouseOver={() => (
-                  (document.getElementById(index).src = item.hoverIcon),
-                  (document.getElementById(`${index}-span`).style.color =
-                    "#fc8019")
-                )}
-                onMouseLeave={() => (
-                  (document.getElementById(index).src = item.icon),
-                  (document.getElementById(`${index}-span`).style.color =
-                    "#3d4152")
-                )}
-              >
-                <img
-                  src={item.icon}
-                  id={index}
-                  className="h-[24px] hover:text-[#fc8019]"
-                />
-
-                <span
-                  id={`${index}-span`}
-                  className="ml-2 text-[#3d4152] hover:text-[#fc8019]"
+              <Link to="/search">
+                <div
+                  className="flex ml-[45px] cursor-pointer hover:text-[#fc8019]"
+                  onMouseOver={() => (
+                    (document.getElementById(index).src = item.hoverIcon),
+                    (document.getElementById(`${index}-span`).style.color =
+                      "#fc8019")
+                  )}
+                  onMouseLeave={() => (
+                    (document.getElementById(index).src = item.icon),
+                    (document.getElementById(`${index}-span`).style.color =
+                      "#3d4152")
+                  )}
                 >
-                  {item.name}
-                </span>
-              </div>
+                  <img
+                    src={item.icon}
+                    id={index}
+                    className="h-[24px] hover:text-[#fc8019]"
+                  />
+
+                  <span
+                    id={`${index}-span`}
+                    className="ml-2 text-[#3d4152] hover:text-[#fc8019]"
+                  >
+                    {item.name}
+                  </span>
+                </div>
+              </Link>
               <span className="text-[10px] text-[#ffa700] absolute top-[24px] ml-[54px] font-bold">
                 {item.badgeName}
               </span>

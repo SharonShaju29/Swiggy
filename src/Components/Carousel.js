@@ -45,11 +45,13 @@ const Carousel = (props) => {
   }
 
   return (
-    <div className="mt-2 flex flex-col lg:w-[1200px] w-[100vw] lg:ml-0 pl-4">
-      <div className="flex items-center lg:w-[1200px] w-[100vw] lg:justify-between lg:pl-0 pl-2">
+    <div className={`mt-2 flex flex-col lg:w-[1200px] w-[100vw] lg:ml-0 lg:pl-4`}>
+      <div
+        className={`flex items-center lg:w-[${props.lengthOfHeader}]  w-[100vw] lg:justify-between lg:pl-0 pl-2 ${props.additionalStyles}`}
+      >
         <img src={thumbsUp} className="h-[20px] lg:hidden pr-2" />
         <h2 className="text-[20px] lg:text-[24px] font-bold">{props.header}</h2>
-        <div className="lg:flex hidden">
+        <div className={`${props.showArrows === false ? "hidden" : "lg:flex"}`}>
           <button
             id="back"
             disabled={length === 1}
@@ -58,7 +60,7 @@ const Carousel = (props) => {
           >
             <img
               src={back}
-              className="h-[28px] bg-[#E2E2E7] rounded-full pr-2"
+              className="h-[28px] bg-[#E2E2E7] rounded-full mr-2"
             />
           </button>
           <button
@@ -76,7 +78,7 @@ const Carousel = (props) => {
           >
             <img
               src={next}
-              className="h-[28px] bg-[#E2E2E7] rounded-full pr-2"
+              className="h-[28px] bg-[#E2E2E7] rounded-full mr-2"
             />
           </button>
         </div>
