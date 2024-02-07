@@ -23,6 +23,7 @@ const HomePage = () => {
           width={"w-[25%]"}
           progressBar={false}
           showArrows={true}
+          lengthOfHeader={"1200px"}
           numberOfElements={5}
         >
           <div className="overflow-x-scroll no-scrollbar my-4">
@@ -55,6 +56,7 @@ const HomePage = () => {
           gap={15}
           progressBar={true}
           showArrows={true}
+          lengthOfHeader={"1200px"}
           numberOfElements={3}
         >
           <Card src={TopRestaurantChainList} />

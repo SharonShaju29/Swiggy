@@ -45,12 +45,18 @@ const Carousel = (props) => {
   }
 
   return (
-    <div className={`mt-2 flex flex-col lg:w-[1200px] w-[100vw] lg:ml-0 lg:pl-4`}>
+    <div
+      className={`mt-2 flex flex-col lg:w-[1200px] w-[100vw] lg:ml-0 lg:pl-4`}
+    >
       <div
-        className={`flex items-center lg:w-[${props.lengthOfHeader}]  w-[100vw] lg:justify-between lg:pl-0 pl-2 ${props.additionalStyles}`}
+        className={`flex items-center lg:w-[1200px] w-[100vw] lg:justify-between lg:pl-0 pl-2`}
       >
-        <img src={thumbsUp} className="h-[20px] lg:hidden pr-2" />
-        <h2 className="text-[20px] lg:text-[24px] font-bold">{props.header}</h2>
+        <img src={thumbsUp} className={`h-[20px] lg:hidden pr-2`} />
+        <h2
+          className={`text-[20px] lg:text-[24px] text-[#3d4152] font-bold ${props.additionalStyles}`}
+        >
+          {props.header}
+        </h2>
         <div className={`${props.showArrows === false ? "hidden" : "lg:flex"}`}>
           <button
             id="back"

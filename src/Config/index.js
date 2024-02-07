@@ -294,3 +294,117 @@ export const navigationBarMobileItems = [
   { name: "SEARCH", icon: search },
   { name: "ACCOUNT", icon: account },
 ];
+
+export const restaurantsAndDishesSearch = [
+  {
+    name: "Iris Cafe",
+    type: "Restaurant",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/pycjji75g8i4npjxw22m",
+  },
+  {
+    name: "Absolute Barbecues",
+    type: "Restaurant",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/mkcsocap2avn2xzucmgw",
+  },
+  {
+    name: "Barbeque Nation",
+    type: "Restaurant",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/gjag4a19ynsm1wtx7mvw",
+  },
+  {
+    name: "Glen's Bakehouse",
+    type: "Restaurant",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/m6jahioyu7zrodei5pcq",
+  },
+  {
+    name: "Baskin Robbins - Ice Cream Desserts",
+    type: "Restaurant",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/85ccae4e3576f9330af102c46ca85395",
+  },
+  {
+    name: "Dindigul Thalappakatti",
+    type: "Restaurant",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/bfasxigdx7ny0cwqhr9r",
+  },
+  {
+    name: "Cafe Coffee Day",
+    type: "Restaurant",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/b70c7d23d197251b7b315b7e4d8173ae",
+  },
+  {
+    name: "La Casa - Bar and Kitchen",
+    type: "Restaurant",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/yjh8kaozqsqpvadpcdga",
+  },
+  {
+    name: "46 Ounces Brewgarden",
+    type: "Restaurant",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/sej48s0rvl6np1pxuhd9",
+  },
+  {
+    name: "7 Plates",
+    type: "Restaurant",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/uqrquwcdyzo3zjylbenx",
+  },
+  {
+    name: "Chat Bandi",
+    type: "Restaurant",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/fovhuqnzvbia1byef6g7",
+  },
+
+  {
+    name: "Burger",
+    type: "Dish",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/ac6cd19ec0940e13058d1646e6837915",
+  },
+  {
+    name: "Pizza",
+    type: "Dish",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/50a7b6a13177e653720b2a1d53e02958",
+  },
+  {
+    name: "Biriyani",
+    type: "Dish",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/ff27a7ad141a19a6c5366dbb2ed92d9a",
+  },
+  {
+    name: "Pasta",
+    type: "Dish",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/rdezez6tmnvbxmey6ha1",
+  },
+  {
+    name: "Mojitos",
+    type: "Dish",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/6b62c6cabe941dea3908b1ff0643f87c",
+  },
+  {
+    name: "Dosa",
+    type: "Dish",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/v0md1tt3tnnrytqn1yb9",
+  },
+  {
+    name: "Al Faham",
+    type: "Dish",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/nxmqwtw3nx52bij69elg",
+  },
+  {
+    name: "Mandi",
+    type: "Dish",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/sbvmpy4znqpknahu8fpo",
+  },
+  {
+    name: "Shawarma",
+    type: "Dish",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/bbr8vbdet3aztw9j7dk4",
+  },
+  {
+    name: "Tacos",
+    type: "Dish",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/acnd09fxdcs0sl5av4lg",
+  },
+  {
+    name: "Ice Cream",
+    type: "Dish",
+    link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/lzd74kpr21w9rqizqpsx",
+  },
+];
