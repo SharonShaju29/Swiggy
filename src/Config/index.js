@@ -22,6 +22,7 @@ export const NavigationOptions = [
     hoverIcon: searchHover,
     hasBadge: false,
     badgeName: "",
+    link: "/search",
   },
   {
     name: "Offers",
@@ -29,6 +30,7 @@ export const NavigationOptions = [
     hoverIcon: discountHover,
     hasBadge: false,
     badgeName: "NEW",
+    link: "/",
   },
   {
     name: "Help",
@@ -36,6 +38,7 @@ export const NavigationOptions = [
     hoverIcon: helpHover,
     hasBadge: false,
     badgeName: "",
+    link: "/",
   },
   {
     name: "Sign In",
@@ -43,6 +46,7 @@ export const NavigationOptions = [
     hoverIcon: signinHover,
     hasBadge: false,
     badgeName: "",
+    link: "/",
   },
   {
     name: "Cart",
@@ -50,6 +54,7 @@ export const NavigationOptions = [
     hoverIcon: cartHover,
     hasBadge: false,
     badgeName: "",
+    link: "/",
   },
 ];
 

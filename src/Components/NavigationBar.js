@@ -43,7 +43,7 @@ const NavigationBar = () => {
         <div className="ml-[150px] hidden lg:flex">
           {NavigationOptions.map((item, index) => (
             <div>
-              <Link to="/search">
+              <Link to={item.link}>
                 <div
                   className="flex ml-[45px] cursor-pointer hover:text-[#fc8019]"
                   onMouseOver={() => (
