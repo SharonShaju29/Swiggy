@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Carousel from "../Components/Carousel";
 import {
   DishesHomePage,
@@ -10,10 +10,13 @@ import CardWithFilter from "../Components/CardWithFilter";
 import TypesCardMobile from "../Components/TypesCardMobile";
 import OfferBannerCarousel from "../Components/OfferBannerCarousel";
 import { offerBanner } from "../Config";
+import { useSelector } from "react-redux";
 
 const HomePage = () => {
+  const isMobile = useSelector((state) => state.mainReducer.isMobile);
+
   return (
-    <div className="flex flex-col justify-center sm:pl-2">
+    <div className="flex flex-col justify-center sm:pl-2 font-proxima">
       <div className="hidden lg:flex justify-center">
         <Carousel
           header="What's on your mind?"
@@ -22,7 +25,7 @@ const HomePage = () => {
           uid="carousel-items"
           width={"w-[25%]"}
           progressBar={false}
-          showArrows={true}
+          showArrows={!isMobile}
           lengthOfHeader={"1200px"}
           numberOfElements={5}
         >
@@ -55,7 +58,7 @@ const HomePage = () => {
           width={"w-[15%]"}
           gap={15}
           progressBar={true}
-          showArrows={true}
+          showArrows={!isMobile}
           lengthOfHeader={"1200px"}
           numberOfElements={3}
         >

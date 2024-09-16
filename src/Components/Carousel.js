@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import back from "../Assets/back.svg";
 import next from "../Assets/next.svg";
 import thumbsUp from "../Assets/thumbsUp.avif";
+import { useSelector } from "react-redux";
 
 const Carousel = (props) => {
+  const isMobile = useSelector((state) => state.mainReducer.isMobile);
   const [length, setLength] = useState(1);
   const [arrLength, setArrLength] = useState(props.length);
   const [clickCounterBack, setClickCounterBack] = useState(1);
@@ -55,9 +57,13 @@ const Carousel = (props) => {
         <h2
           className={`text-[20px] lg:text-[24px] text-[#3d4152] font-bold ${props.additionalStyles}`}
         >
-          {props.header}
+          {isMobile ? props.mobHeader : props.header}
         </h2>
-        <div className={`${props.showArrows === false ? "hidden" : "lg:flex"}`}>
+        <div
+          className={`${
+            props.showArrows === false ? "hidden" : "lg:flex hidden"
+          } `}
+        >
           <button
             id="back"
             disabled={length === 1}

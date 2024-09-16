@@ -8,9 +8,9 @@ import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
-    <div className="h-[58px] lg:h-[80px] border-b-2 fixed w-[100vw] lg:shadow-md items-center flex justify-center z-[1000] bg-white">
+    <div className="h-[58px] lg:h-[80px] border-b-2 fixed w-[100vw] lg:shadow-md items-center flex justify-center z-[1000] bg-white font-proxima">
       <div className="max-w-[1200px] lg:w-full w-[95vw] items-center flex justify-between">
-        <Link to="/">
+        <Link to="/" className="hidden lg:block">
           <img
             src={logo}
             className="hidden lg:block h-[48px] w-[48px] hover:h-[52px] transition-all"
@@ -71,7 +71,7 @@ const NavigationBar = () => {
                   </span>
                 </div>
               </Link>
-              <span className="text-[10px] text-[#ffa700] absolute top-[24px] ml-[54px] font-bold">
+              <span className="text-[10px] text-[#ffa700] absolute top-[20px] ml-[58px] font-bold">
                 {item.badgeName}
               </span>
             </div>
